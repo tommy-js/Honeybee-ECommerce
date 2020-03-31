@@ -6,3 +6,30 @@
   margin-right: auto;
   border: 1px solid red;
 }
+
+.main_body {
+  position: relative;
+  margin: 15px;
+  float: right;
+  height: 100%;
+  width: 80%;
+  border: 1px solid green;
+}
+
+.sidebar {
+  position: relative;
+  float: left;
+  margin: 15px;
+  width: 15%;
+  height: 100%;
+  border: 1px solid blue;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  margin: 0;
+  background-color: grey;
+}

@@ -4,6 +4,7 @@ import Navbar from "../NavComp/Navbar";
 import Body from "./Body";
 import About from "./About";
 import PowerNode from "./PowerNode";
+import Footer from "./Footer";
 
 export default class Master extends Component {
   constructor(props) {
@@ -23,6 +24,7 @@ export default class Master extends Component {
             <Route exact path="/About">
               <About />
             </Route>
+            <Footer />
           </div>
         </Switch>
       </Router>
