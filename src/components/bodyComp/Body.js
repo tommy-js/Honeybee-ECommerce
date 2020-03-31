@@ -17,7 +17,11 @@ export default class Body extends Component {
     return (
       <div className={styles.main_body}>
         {products.map(elements => (
-          <Product name={elements.name} />
+          <Product
+            key={elements.productKey}
+            stateAge={elements.stateAge}
+            name={elements.name}
+          />
         ))}
       </div>
     );
