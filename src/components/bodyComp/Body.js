@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import Navbar from "../NavComp/Navbar";
-import Body from "./Body";
 
-export default class Master extends Component {
+export default class Body extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -11,8 +9,7 @@ export default class Master extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <Body />
+        <p>body</p>
       </div>
     );
   }

@@ -1,9 +1,11 @@
 import React from "react";
+import Master from "./components/bodyComp/Master";
+import styles from "./styles.module.css";
 
 function App() {
   return (
-    <div className="App">
-      <p>Hello world!</p>
+    <div>
+      <Master />
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.main_navbar {
+  position: fixed;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  background-color: teal;
+}
+
+.navbar_item {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from "./styles.module.css";
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -8,12 +9,16 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <div>
-        <p>Home</p>
-        <p>about</p>
-        <p>blog</p>
-        <p>create account</p>
-        <input type="text" placeholder="search" />
+      <div className={styles.main_navbar}>
+        <p className={styles.navbar_item}>Home</p>
+        <p className={styles.navbar_item}>about</p>
+        <p className={styles.navbar_item}>blog</p>
+        <p className={styles.navbar_item}>create account</p>
+        <input
+          type="text"
+          className={styles.navbar_item}
+          placeholder="search"
+        />
       </div>
     );
   }
