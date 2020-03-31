@@ -4,11 +4,60 @@
   height: 75px;
   width: 100%;
   z-index: 99;
-  background-color: teal;
+  background-color: #ff5151;
 }
 
 .navbar_item {
   position: relative;
   display: inline-block;
+  width: 60px;
+  height: 40px;
+  font-size: 18px;
   margin-left: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+  border: 1px solid blue;
+}
+
+.home_image {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border: 1px solid red;
+}
+
+.image_item {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+  border: 1px solid blue;
+}
+
+.image_item:hover .image_cover {
+  height: 0;
+  transition: 0.3s;
+}
+
+.image_cover {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #ff5151;
+  transition: 0.3s;
+}
+
+.navbar_search {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+  border: 1px solid blue;
 }

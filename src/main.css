@@ -43,3 +43,19 @@
   margin: 0;
   background-color: grey;
 }
+
+.new_product_container {
+  position: relative;
+  height: 400px;
+  width: 90%;
+  border: 1px solid orange;
+  overflow: hidden;
+}
+
+.new_product_image {
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
