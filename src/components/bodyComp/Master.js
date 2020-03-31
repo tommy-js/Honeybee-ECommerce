@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../NavComp/Navbar";
 import Body from "./Body";
 import About from "./About";
+import Profile from "../profileComp/Profile";
 import PowerNode from "./PowerNode";
 import Footer from "./Footer";
+import Blog from "../blogComp/Blog";
 import styles from "./styles.module.css";
 
 export default class Master extends Component {
@@ -24,6 +26,12 @@ export default class Master extends Component {
             </Route>
             <Route exact path="/About">
               <About />
+            </Route>
+            <Route exact path="/Blog">
+              <Blog />
+            </Route>
+            <Route exact path="/Account">
+              <Profile />
             </Route>
             <Footer className={styles.footer} />
           </div>
