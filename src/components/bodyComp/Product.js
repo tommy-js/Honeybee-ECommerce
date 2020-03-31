@@ -1,6 +1,8 @@
 import React from "react";
+import ProductPage from "./ProductPage";
 import styles from "./styles.module.css";
 import star from "../../images/star.png";
+import { Link } from "react-router-dom";
 
 function Product(props) {
   let value;
@@ -10,12 +12,14 @@ function Product(props) {
     value = "";
   }
   return (
-    <div className={styles.product_body}>
-      <div className={styles.product_image}></div>
-      <p>{props.name}</p>
-      <img className={styles.image_new} src={value} />
-      <button>Wishlist</button>
-    </div>
+    <Link to="/Product">
+      <div className={styles.product_body}>
+        <div className={styles.product_image}></div>
+        <p>{props.name}</p>
+        <img className={styles.image_new} src={value} />
+        <button>Wishlist</button>
+      </div>
+    </Link>
   );
 }
 
