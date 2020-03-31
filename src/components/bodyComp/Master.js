@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../NavComp/Navbar";
 import Body from "./Body";
+import About from "./About";
+import PowerNode from "./PowerNode";
 
 export default class Master extends Component {
   constructor(props) {
@@ -10,10 +13,19 @@ export default class Master extends Component {
 
   render() {
     return (
-      <div>
-        <Navbar />
-        <Body />
-      </div>
+      <Router>
+        <Switch>
+          <div>
+            <Navbar />
+            <Route exact path="/">
+              <PowerNode />
+            </Route>
+            <Route exact path="/About">
+              <About />
+            </Route>
+          </div>
+        </Switch>
+      </Router>
     );
   }
 }
