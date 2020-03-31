@@ -7,6 +7,9 @@ function NewProduct() {
     <div>
       <p>New Product</p>
       <img className="new_product_image" src={macbook} />
+      <div className="new_product_button">
+        <p className="button_span">Learn more</p>
+      </div>
     </div>
   );
 }
