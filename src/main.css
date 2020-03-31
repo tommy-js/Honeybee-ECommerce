@@ -1,0 +1,45 @@
+.power_node {
+  position: relative;
+  width: 85%;
+  height: auto;
+  vertical-align: top;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red;
+}
+
+.power_node .main_body,
+.power_node .sidebar {
+  vertical-align: top;
+}
+
+.main_body {
+  position: relative;
+  display: inline-block;
+  flex-wrap: wrap;
+  right: 0;
+  margin: 15px;
+  height: 100%;
+  width: 80%;
+  border: 1px solid green;
+}
+
+.sidebar {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  width: 15%;
+  left: 0;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  margin: 0;
+  background-color: grey;
+}

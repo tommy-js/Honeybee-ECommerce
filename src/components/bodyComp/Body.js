@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Product from "./Product";
 import styles from "./styles.module.css";
+import "../../main.css";
 import productElements from "../bodyObs/obs";
 
 export default class Body extends Component {

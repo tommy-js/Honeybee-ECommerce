@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import styles from "./styles.module.css";
 
 function Product(props) {
   return (
-    <div>
+    <div className={styles.product_body}>
       <p>{props.name}</p>
     </div>
   );

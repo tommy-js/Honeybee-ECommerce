@@ -1,13 +1,17 @@
 import React, { Component } from "react";
-import styles from "./styles.module.css";
+import "../../main.css";
 import Body from "./Body";
 import Sidebar from "./Sidebar";
 
 function PowerNode() {
   return (
-    <div className={styles.power_node}>
-      <Body />
-      <Sidebar />
+    <div className="power_node">
+      <div className="sidebar">
+        <Sidebar />
+      </div>
+      <div className="main_body">
+        <Body />
+      </div>
     </div>
   );
 }
