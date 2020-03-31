@@ -64,3 +64,32 @@
   height: 30px;
   width: 30px;
 }
+
+.timeline_container {
+  position: relative;
+  height: 20px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.blog_timeline_body {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  margin-left: 10px;
+}
+
+.blog_timeline {
+  position: fixed;
+}
+
+.timeline_circle {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 20px;
+}
