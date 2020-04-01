@@ -66,13 +66,13 @@
   border: 1px solid green;
 }
 
-.product_title {
+.product_page_title {
   position: relative;
   margin-left: 25px;
   font-size: 26px;
 }
 
-.product_review {
+.product_page_review {
   position: relative;
   height: 800px;
   margin: 25px;

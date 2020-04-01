@@ -24,3 +24,35 @@
   border: 1px solid blue;
   display: inline-block;
 }
+
+.create_account_page {
+  position: relative;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  border: 1px solid green;
+}
+
+.create_account_page_header {
+  text-align: center;
+}
+
+.account_creation_block {
+  position: relative;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid blue;
+}
+
+.account_creation_input {
+  position: relative;
+  display: block;
+  width: 185px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  height: 40px;
+  font-size: 18px;
+}

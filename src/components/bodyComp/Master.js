@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../NavComp/Navbar";
 import Body from "./Body";
 import About from "./About";
-import Profile from "../profileComp/Profile";
+import AccountManager from "../profileComp/AccountManager";
 import PowerNode from "./PowerNode";
 import Footer from "./Footer";
 import Blog from "../blogComp/Blog";
@@ -32,7 +32,7 @@ export default class Master extends Component {
               <Blog />
             </Route>
             <Route exact path="/Account">
-              <Profile />
+              <AccountManager />
             </Route>
             <Route exact path="/Macbook Pro">
               <ProductPage />
