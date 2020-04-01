@@ -47,3 +47,34 @@
   margin-right: auto;
   border: 1px solid red;
 }
+
+.product_info {
+  position: relative;
+  width: 18%;
+  height: 600px;
+  margin: 15px;
+  display: inline-block;
+  border: 1px solid orange;
+}
+
+.product_page_image {
+  position: relative;
+  width: 72%;
+  height: 600px;
+  margin: 15px;
+  display: inline-block;
+  border: 1px solid green;
+}
+
+.product_title {
+  position: relative;
+  margin-left: 25px;
+  font-size: 26px;
+}
+
+.product_review {
+  position: relative;
+  height: 800px;
+  margin: 25px;
+  border: 1px solid blue;
+}
