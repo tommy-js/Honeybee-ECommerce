@@ -7,14 +7,13 @@ import Profile from "../profileComp/Profile";
 import PowerNode from "./PowerNode";
 import Footer from "./Footer";
 import Blog from "../blogComp/Blog";
-import ProductPage from "./ProductPage";
+import ProductPage from "./products/ProductPage";
 import styles from "./styles.module.css";
 
 export default class Master extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.callLog = this.callLog.bind(this);
   }
 
   render() {
@@ -35,7 +34,7 @@ export default class Master extends Component {
             <Route exact path="/Account">
               <Profile />
             </Route>
-            <Route exact path="/Product">
+            <Route exact path="/Macbook Pro">
               <ProductPage />
             </Route>
             <Footer className={styles.footer} />
