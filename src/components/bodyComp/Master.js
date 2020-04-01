@@ -8,6 +8,7 @@ import PowerNode from "./PowerNode";
 import Footer from "./Footer";
 import Blog from "../blogComp/Blog";
 import ProductPage from "./products/ProductPage";
+import BlogPage from "../blogComp/blogs/BlogPage";
 import styles from "./styles.module.css";
 
 export default class Master extends Component {
@@ -36,6 +37,9 @@ export default class Master extends Component {
             </Route>
             <Route exact path="/Macbook Pro">
               <ProductPage />
+            </Route>
+            <Route exact path="/Blog1">
+              <BlogPage />
             </Route>
             <Footer className={styles.footer} />
           </div>

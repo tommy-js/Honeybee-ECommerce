@@ -26,7 +26,7 @@ html {
   backface-visibility: hidden;
 }
 .blog_card:hover {
-  transform: scale(1.025);
+  transform: scale(1.015);
   transition: 0.3s;
 }
 
@@ -134,4 +134,52 @@ html {
 .timeline_container:hover .white_box {
   height: 0;
   transition: 0.3s;
+}
+
+.blog_page {
+  position: relative;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  border: 1px solid red;
+}
+
+.blog_page_title {
+  position: relative;
+  text-align: center;
+}
+
+.blog_page_image_box {
+  position: relative;
+  width: 60%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  overflow: hidden;
+  border: 1px solid green;
+}
+
+.blog_page_image {
+  position: relative;
+  width: 100%;
+}
+
+.blog_page_subheader {
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog_page_content {
+  position: relative;
+  width: 60%;
+  font-size: 18px;
+  line-height: 165%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
