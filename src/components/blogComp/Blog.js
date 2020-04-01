@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BlogCard from "./BlogCard";
 import BlogTimeline from "./BlogTimeline";
 import blogs from "../bodyObs/blogs";
@@ -6,8 +6,10 @@ import timeline from "../bodyObs/timeline";
 import "./blog.css";
 
 function Blog() {
+  const [thiskey, setThisKey] = useState(0);
   function setReference(e) {
     console.log(e);
+    setThisKey(e);
   }
 
   return (
@@ -23,7 +25,12 @@ function Blog() {
       </div>
 
       {blogs.map(elements => (
-        <BlogCard title={elements.title} imageurl={elements.url} />
+        <BlogCard
+          reference={elements.reference}
+          checkRef={thiskey}
+          title={elements.title}
+          imageurl={elements.url}
+        />
       ))}
     </div>
   );

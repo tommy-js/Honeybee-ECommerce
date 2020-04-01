@@ -16,6 +16,7 @@ function BlogTimeline(props) {
       >
         <div className="timeline_circle">
           <img className="timeline_circle_img" src={circlefilled} />
+          <div className="timeline_circle_img white_box"></div>
           <img className="timeline_circle_img" src={circle} />
         </div>
         <div className="blog_timeline_body">{props.published}</div>

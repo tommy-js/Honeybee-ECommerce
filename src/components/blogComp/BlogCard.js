@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./blog.css";
 import heart from "../../images/heart.png";
 import heartfull from "../../images/heartfilled.png";
@@ -11,8 +11,14 @@ import bookmarkfull from "../../images/bookmarkfilled.png";
 
 function BlogCard(props) {
   const newimg = props.imageurl;
+  const reference = props.reference;
+  const checkRef = props.checkRef;
+  const refthis = useRef(null);
+  if (reference === checkRef) {
+    window.scrollTo(0, refthis.current.offsetTop);
+  }
   return (
-    <div className="blog_card">
+    <div ref={refthis} className="blog_card">
       <div className="blog_image">
         <img className="blog_image_encloser" src={newimg} />
       </div>
