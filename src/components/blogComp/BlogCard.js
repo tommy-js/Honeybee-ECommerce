@@ -10,9 +10,12 @@ import bookmark from "../../images/bookmark.png";
 import bookmarkfull from "../../images/bookmarkfilled.png";
 
 function BlogCard(props) {
+  const newimg = props.imageurl;
   return (
     <div className="blog_card">
-      <div className="blog_image"></div>
+      <div className="blog_image">
+        <img className="blog_image_encloser" src={newimg} />
+      </div>
       <div className="blog_info">
         <p className="blog_title">{props.title}</p>
         <div className="image_block">

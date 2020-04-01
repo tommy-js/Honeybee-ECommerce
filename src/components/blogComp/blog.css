@@ -14,20 +14,36 @@
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
   border: 1px solid red;
+  transition: 0.3s;
+}
+.blog_card:hover {
+  transform: scale(1.025);
+  transition: 0.3s;
 }
 
 .blog_title {
   position: relative;
-  font-size: 18px;
+  font-size: 22px;
   margin: 10px;
+  margin-left: 0;
 }
 
 .blog_image {
   position: relative;
   height: 70%;
   width: 100%;
+  overflow: hidden;
   border: 1px solid blue;
+}
+
+.blog_image_encloser {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .blog_info {
@@ -74,6 +90,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
 }
 
 .blog_timeline_body {
@@ -90,6 +107,14 @@
 .timeline_circle {
   position: relative;
   display: inline-block;
+  height: 100%;
+  width: 20px;
+}
+
+.timeline_circle_img {
+  position: absolute;
+  top: 0;
+  margin: 0;
   height: 100%;
   width: 20px;
 }
