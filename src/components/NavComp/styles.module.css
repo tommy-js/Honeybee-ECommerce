@@ -12,11 +12,19 @@
   display: inline-block;
   width: 60px;
   height: 40px;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 15px;
   vertical-align: top;
   border: 1px solid blue;
+  transition: 0.3s;
+}
+
+.navbar_item:hover {
+  color: #ffa41b;
+  transition: 0.3s;
 }
 
 .home_image {

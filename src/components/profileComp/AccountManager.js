@@ -15,6 +15,7 @@ export default class AccountManager extends Component {
     this.checkPassword = this.checkPassword.bind(this);
     this.checkEmail = this.checkEmail.bind(this);
     this.createAccount = this.createAccount.bind(this);
+    this.signOut = this.signOut.bind(this);
   }
 
   componentDidMount() {
@@ -51,12 +52,16 @@ export default class AccountManager extends Component {
     }
   }
 
+  signOut() {
+    this.setState({ profileStated: false });
+  }
+
   render() {
     const { profileStated } = this.state;
     if (profileStated === true) {
       return (
         <div>
-          <Profile />
+          <Profile signOut={this.signOut} />
         </div>
       );
     } else {

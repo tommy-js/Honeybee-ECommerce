@@ -1,6 +1,6 @@
 import React from "react";
 import "../../main.css";
-import macbook from "../../images/testing.jpg";
+import macbook from "../../images/products/testing.jpg";
 
 function NewProduct() {
   return (

@@ -14,6 +14,7 @@ export default class Profile extends Component {
       <div className="profile">
         <div className="settings_body">
           <Settings />
+          <button onClick={() => this.props.signOut()}>Sign Out</button>
         </div>
         <div className="profile_body">
           <ProfileBody />
